@@ -53,6 +53,7 @@
 .box-projects{
     text-align: center;
     margin-top: 3em;
+    padding-bottom: 1.5em;
     border: 3px groove var(--color);
     border-radius: 4em 4em 4em 4em;
     background-color: rgba(255, 253, 225, 0.3);
