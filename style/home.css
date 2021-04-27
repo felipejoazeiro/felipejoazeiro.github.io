@@ -1,0 +1,100 @@
+.apresen {
+    position: relative;
+}
+
+#image {
+    width: 100%;
+    height: 40vw;
+    box-shadow: 0px 5px 66px 3px rgba(0,0,0,0.67);
+    border: 3px groove var(--color);
+    border-radius: 0 0 4em 4em;
+}
+#texto {
+    position: absolute;
+    font-size: 1em;
+    right: 1em;
+    top: 1em;
+}
+#texto h1{
+    font-family: 'Bellota', cursive;
+    font-size: 9vw;
+    color: #4f6f88;
+    position: absolute;
+    right: 35vw;
+    top:5vw;
+}
+#texto h2{
+    position: absolute;
+    top: 18vw;
+    right: 4vw;
+    font-size: 3.6vw;
+    width:8em;
+    font-style: bold;
+    color: var(--color);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.apresen #texto h3{
+    visibility: hidden;
+    opacity: 0;
+    width: 26em;
+    position: absolute;
+    top: 27.5vw;
+    right: 13vw;
+    font-size: 1.45vw;
+    transition: opacity 1.5s, visibility 1.5s;
+    font-family: 'Shadows Into Light', cursive;
+    color: #3c645a;
+}
+.apresen:hover #texto h3{
+    visibility: visible;
+    opacity: 1;
+    transition: all 1.5s;
+}
+.box-projects{
+    text-align: center;
+    margin-top: 3em;
+    border: 3px groove var(--color);
+    border-radius: 4em 4em 4em 4em;
+    background-color: rgba(255, 253, 225, 0.3);
+}
+.box-projects h1{
+    font-size: 3em;
+    margin: 1em 0 1em 0;
+}
+
+.all-projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.project{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.25em 0;
+    box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.67);
+    border: 2px var(--color) solid;
+    border-radius: 25px;
+    background-color: rgba(95, 158, 160, 0.2);
+}
+
+.project .img-project img{
+    width: 80%;
+    height: 25em;
+    border-radius: 25px;
+}
+.details-project{
+    width: 80%;
+    margin: 0 auto;
+}
+.details-project .name{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.25em 0;
+}
+.details-project .description{
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(66, 0, 99);
+}

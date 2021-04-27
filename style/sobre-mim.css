@@ -1,0 +1,74 @@
+.navbar{    
+    display: flex;
+    border-radius: 0 0 20px 20px;
+    /*background-color: var(--color);*/
+    padding-bottom: 1em;
+}
+.navbar-brand img{
+    width: 4em;
+    height: 2em;
+}
+
+#album{
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+#linha {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: var(--color);
+    margin: 8px 0px;
+}
+#linha::before,
+#linha::after {
+    content: "";
+    flex-grow: 1;
+    background: var(--color);
+    height: 5px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 8px;
+}
+#foto{
+    width: 16vw;
+    height: 16vw;
+    border-radius: 5em;
+    border: solid var(--color) 0.3em;
+    margin: 2em auto;
+}
+h1{
+    font-size: 2em;
+}
+.titulo{
+    display: flex;
+    width: 20%;
+    height: 20%;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #355361;
+}
+.titulo span{
+    font-size: 2em;;
+}
+.textos{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    margin: 5em auto;
+    background-color: #dae6e7;
+    border-radius: 2vw;
+    border: solid var(--color) 2px;
+    padding: 2em 2em;
+}
+.textos p{
+    margin-top: 1em ;
+    text-align: justify;
+}
+
+
