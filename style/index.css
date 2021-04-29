@@ -17,3 +17,13 @@
     cursor: pointer;
     margin-top: 2em!important; 
 }
+.bio-section{
+    width: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+.bio-section button{
+    width: 100%;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
