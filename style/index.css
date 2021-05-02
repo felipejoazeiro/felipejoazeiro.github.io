@@ -30,3 +30,9 @@
 .profile-img{
     border-radius: 50%;
 }
+.email{
+    font-weight: bolder;
+    font-size: large;
+    color: blueviolet;
+    text-decoration: underline;
+}
