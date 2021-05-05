@@ -27,12 +27,57 @@
     margin-bottom: 1.5em;
     text-align: center;
 }
-.profile-img{
-    border-radius: 50%;
-}
 .email{
     font-weight: bolder;
     font-size: large;
     color: blueviolet;
     text-decoration: underline;
+}
+
+@media (min-width: 992px) { 
+    .title{
+        text-align: center;
+        margin: 1em 0;
+    }
+    .main-projects{
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+        margin: 1.8em auto;
+    }
+    
+    .main-projects a{
+        color: black;
+        text-decoration:none; 
+        cursor: pointer;
+        margin-top: 2em!important; 
+    }
+
+    .main-projects img{
+        height: 250px;
+        border: solid 0.2px black;
+    }
+    .main-projects .card-title,
+    .main-projects .card-text{
+        text-align: center;
+    }
+    .bio-section{
+        width: 60%;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        align-items: center;
+    }
+    .bio-section button{
+        width: 30%;
+        margin: 0 auto 1.5em auto;
+        text-align: center;
+    }
+    .bio-section img{
+        width: 320px;
+        height: 320px;
+        margin: 0 auto;
+        border: solid 0.2px black;
+    }
 }
