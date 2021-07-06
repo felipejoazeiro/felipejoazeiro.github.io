@@ -127,3 +127,32 @@ themeButton.addEventListener('click',()=>{
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+
+
+
+
+
+var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var statusSuccess = document.getElementById("my-form-status-success");
+      var statusError = document.getElementById("my-form-status-error");
+
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        statusSuccess.classList.add('show__status')
+        form.reset()
+      }).catch(error => {
+        statusError.classList.add('show__status')
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
